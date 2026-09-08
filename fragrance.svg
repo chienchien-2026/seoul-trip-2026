@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600">
+    <rect width="900" height="600" fill="#eee7dc"/><circle cx="450" cy="245" r="125" fill="#d8cbb9"/>
+    <text x="450" y="285" text-anchor="middle" font-size="105">🌸</text>
+    <text x="450" y="435" text-anchor="middle" font-family="Arial" font-size="42" fill="#37332d">FRAGRANCE</text>
+    <text x="450" y="485" text-anchor="middle" font-family="Arial" font-size="26" fill="#756d63">perfume · hand cream</text></svg>
