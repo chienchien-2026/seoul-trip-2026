@@ -18,10 +18,20 @@ table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:11px 8px
 .area{margin-top:18px}.area h3{font:1.7rem Georgia,serif;margin:0 0 10px}.food{font-size:.9rem}
 footer{background:#292722;color:#eee6da;margin-top:50px}footer .wrap{padding:50px 0}
 @media(max-width:760px){.summary{grid-template-columns:1fr 1fr}.days,.arch-grid{grid-template-columns:1fr}.archhero{height:280px}section{padding:48px 0}.hero{min-height:70vh}}
+
+.shopgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:20px}
+.shopcard{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden}
+.shopphoto{height:210px;background-size:cover;background-position:center}
+.shopinfo{padding:18px}.shopinfo h4{margin:0 0 5px;font-size:1.08rem}.what{color:var(--rust);font-weight:800}
+.mapbox{margin-top:22px;background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden}
+.mapbox iframe{display:block;width:100%;height:330px;border:0}.mapcap{padding:15px 18px;color:var(--muted);font-size:.9rem}
+.maplinks{padding:0 18px 17px}.maplinks a{display:inline-block;margin:4px 5px 0 0;padding:7px 10px;border:1px solid var(--line);border-radius:999px;text-decoration:none;color:var(--ink);background:white;font-size:.8rem}
+@media(max-width:760px){.shopgrid{grid-template-columns:1fr 1fr}.shopphoto{height:170px}}
+@media(max-width:480px){.shopgrid{grid-template-columns:1fr}}
 </style></head>
 <body>
 <header class="hero"><div class="wrap"><div class="eyebrow">4 GIRLS · SEOUL · AUTUMN 2026</div><h1>SEOUL</h1><p>10.23—10.26｜逛街、香氛、韓國品牌、建築巡禮、WILD WILD、海鮮，以及最後一天的江南醫美。</p></div></header>
-<nav><div class="wrap"><a href="#overview">總覽</a><a href="#d1">10/23 明洞</a><a href="#d2">10/24 聖水</a><a href="#architecture">10/25 建築</a><a href="#d4">10/26 江南・弘大</a><a href="#shops">店家總表</a></div></nav>
+<nav><div class="wrap"><a href="#overview">總覽</a><a href="#d1">10/23 明洞</a><a href="#d2">10/24 聖水</a><a href="#architecture">10/25 建築</a><a href="#d4">10/26 江南・弘大</a><a href="#visualshopping">逛什麼？</a><a href="#shops">店家總表</a></div></nav>
 
 <section id="overview"><div class="wrap"><div class="eyebrow" style="color:var(--rust)">TRIP AT A GLANCE</div><h2>四天行程總覽</h2><p class="lede">安排原則是同區集中、不為單一店家跨城折返。10/25 特別改成「建築師會值得看的首爾建築巡禮」，不是一般觀光景點拼盤。</p>
 <div class="summary">
@@ -34,7 +44,11 @@ footer{background:#292722;color:#eee6da;margin-top:50px}footer .wrap{padding:50p
 <section id="d1"><div class="wrap"><div class="eyebrow" style="color:var(--rust)">DAY 01 · FRIDAY</div><h2>10/23｜抵達 → 明洞</h2>
 <div class="card daybody">
 <div class="time"><b>10:30</b><span>桃園 T1 起飛</span></div><div class="time"><b>14:40</b><span>仁川 T1 抵達 → 入境、領行李、進首爾</span></div><div class="time"><b>傍晚</b><span>飯店放行李後直接逛明洞，不再跨區。</span></div><div class="time"><b>晚餐</b><span>白松韓牛（백송）｜韓牛燒肉</span></div>
-<div class="note">明洞購物：Ready Young、Olive Young、Holika Holika、Nyu Nyu、Mimiline、Juuneedu、Snow Peak、Hetras。</div></div></div></section>
+<div class="note">明洞購物：Ready Young、Olive Young、Holika Holika、Nyu Nyu、Mimiline、Juuneedu、Snow Peak、Hetras。</div></div>
+<div class="mapbox"><iframe loading="lazy" src="https://www.google.com/maps?q=Myeongdong%2C%20Seoul&output=embed"></iframe>
+<div class="mapcap"><b>DAY 1 地圖｜明洞</b>　飯店放行李後，整晚集中在明洞步行商圈。</div>
+<div class="maplinks"><a target="_blank" href="https://www.google.com/maps/search/?api=1&query=Myeongdong+Seoul">明洞</a><a target="_blank" href="https://www.google.com/maps/search/?api=1&query=Olive+Young+Myeongdong+Seoul">Olive Young</a><a target="_blank" href="https://www.google.com/maps/search/?api=1&query=Nyu+Nyu+Myeongdong+Seoul">Nyu Nyu</a></div></div>
+</div></section>
 
 <section id="d2"><div class="wrap"><div class="eyebrow" style="color:var(--rust)">DAY 02 · SATURDAY</div><h2>10/24｜聖水主力購物 → WILD WILD</h2>
 <p class="lede">白天全部留給聖水。表演場地在中區明寶藝術廳、靠近乙支路3街，因此聖水逛完回市中心看秀很順；不再硬塞鷺梁津。</p>
@@ -44,7 +58,11 @@ footer{background:#292722;color:#eee6da;margin-top:50px}footer .wrap{padding:50p
 <div class="time"><b>午餐</b><span>Neungdong Minari 或 Mugukjip；看當天排隊決定。</span></div>
 <div class="time"><b>傍晚</b><span>回中區／飯店放戰利品，吃簡單晚餐。</span></div>
 <div class="time"><b>晚上</b><span><b>WILD WILD《Dream》</b>｜Myungbo Art Hall，47 Mareunnae-ro。你們已決定 10/24；實際場次依最終票券為準。</span></div>
-<div class="note">Nyuwear 新堂店保留為 Bonus：如果看完秀還有體力再去，不犧牲白天聖水購物時間。</div></div></div></section>
+<div class="note">Nyuwear 新堂店保留為 Bonus：如果看完秀還有體力再去，不犧牲白天聖水購物時間。</div></div>
+<div class="mapbox"><iframe loading="lazy" src="https://www.google.com/maps?q=Seongsu-dong%2C%20Seoul&output=embed"></iframe>
+<div class="mapcap"><b>DAY 2 地圖｜聖水 → 中區</b>　白天以聖水站／延武場路商圈為核心，晚上回中區 Myungbo Art Hall 看 WILD WILD。</div>
+<div class="maplinks"><a target="_blank" href="https://www.google.com/maps/search/?api=1&query=Olive+Young+N+Seongsu">Olive Young N</a><a target="_blank" href="https://www.google.com/maps/search/?api=1&query=MUSINSA+Megastore+Seongsu">MUSINSA</a><a target="_blank" href="https://www.google.com/maps/search/?api=1&query=Tamburins+Seongsu">Tamburins</a><a target="_blank" href="https://www.google.com/maps/search/?api=1&query=Myungbo+Art+Hall+Seoul">WILD WILD</a></div></div>
+</div></section>
 
 <section id="architecture"><div class="wrap"><div class="eyebrow" style="color:var(--rust)">DAY 03 · ARCHITECTURE SUNDAY</div><h2>10/25｜首爾建築巡禮</h2>
 <p class="lede">這天是替「台灣建築師」排的：從韓國第一代現代建築師金壽根，走到 Zaha Hadid，再看 Leeum 一個基地上三位國際建築師的對話，最後用 David Chipperfield 的企業總部收尾。四站的建築語言差異夠大，值得專門花一天。</p>
@@ -64,15 +82,33 @@ footer{background:#292722;color:#eee6da;margin-top:50px}footer .wrap{padding:50p
 <article class="card arch"><div class="archimg" style="background-image:url('https://cdn.sanity.io/images/5azy6oei/production/d55698b08893929a2f74be53623e55a8b88e8048-2126x1645.jpg?auto=format&fit=crop&q=80&w=2500')"></div><div class="archbody"><div class="label">03 · THREE ARCHITECTS</div><h3>Leeum Museum of Art</h3><div class="architect">Mario Botta · Jean Nouvel · Rem Koolhaas / OMA</div><p class="why">對建築師特別有意思：同一文化機構由不同建築語言並置，材料、量體、展覽空間與基地關係可以直接比較。這站值得進館，不只拍外觀。</p></div></article>
 <article class="card arch"><div class="archimg" style="background-image:url('https://www.metalocus.es/sites/default/files/styles/mopis_news_carousel_item_desktop/public/metalocus_david_chipperfield_amorepacific_02.jpg')"></div><div class="archbody"><div class="label">04 · CORPORATE CIVIC SPACE</div><h3>Amorepacific Headquarters</h3><div class="architect">David Chipperfield Architects</div><p class="why">單純的立方量體包住中央庭院，三個巨大開口形成城市尺度的「懸空花園」。外層遮陽構件、自然採光與公共性，是和 DDP 完全不同的建築態度。</p></div></article>
 </div>
+<div class="mapbox"><iframe loading="lazy" src="https://www.google.com/maps?q=Dongdaemun%20Design%20Plaza%2C%20Seoul&output=embed"></iframe>
+<div class="mapcap"><b>DAY 3 地圖｜建築巡禮</b>　鐘路 ARARIO → 東大門 DDP → 漢南洞 Leeum → 龍山 Amorepacific。按下面地點可直接開 Google Maps。</div>
+<div class="maplinks"><a target="_blank" href="https://www.google.com/maps/search/?api=1&query=ARARIO+Museum+in+Space+Seoul">ARARIO</a><a target="_blank" href="https://www.google.com/maps/search/?api=1&query=Dongdaemun+Design+Plaza">DDP</a><a target="_blank" href="https://www.google.com/maps/search/?api=1&query=Leeum+Museum+of+Art">Leeum</a><a target="_blank" href="https://www.google.com/maps/search/?api=1&query=Amorepacific+Headquarters+Seoul">Amorepacific</a></div></div>
 <div class="note">為什麼沒有硬排梨花女子大學 ECC：它當然是首爾名作，但 10/25 是星期日，校園／建築可進入性不如上述四站穩定；這版優先確保「星期日真的值得去、而且建築內容夠強」的路線。</div>
 </div></section>
 
 <section id="d4"><div class="wrap"><div class="eyebrow" style="color:var(--rust)">DAY 04 · MONDAY</div><h2>10/26｜江南 → 弘大・延南洞 → ICN</h2>
 <p class="lede">依你的要求，這版完全移除醫美療程方案、價格、發數與填充內容；只保留已固定的預約時間，讓旅行版面保持乾淨。</p>
 <div class="card daybody">
-<div class="time"><b>10:00</b><span><b>ON Clinic（奧恩）</b>｜4 人預約</span></div><div class="time"><b>~15:00</b><span>預留醫美時間，不另外塞行程</span></div><div class="time"><b>15:30+</b><span>弘大：LUUNE、LOC、LOOF、Loofon、Wausan-ro 27-gil、Trick Eye Museum 商圈</span></div><div class="time"><b>之後</b><span>延南洞：有貓的相框店、延南洞文創街</span></div><div class="time"><b>19:00</b><span>開始收尾、拿行李／整理戰利品</span></div><div class="time"><b>19:30–20:00</b><span>往仁川機場移動</span></div><div class="time"><b>23:00</b><span>仁川起飛 → 10/27 00:45 桃園</span></div>
-</div></div></section>
+<div class="time"><b>10:00</b><span><b>ON Clinic（奧恩）</b>｜4 人預約</span></div><div class="time"><b>~15:00</b><span>預留醫美時間，不另外塞行程</span></div><div class="time"><b>15:30+</b><span>弘大／延南洞：LUUNE、LOC、LOOF、Loofon、Wausan-ro 27-gil、有貓的相框店、延南洞文創街</span></div>
+<div class="time"><b>17:00</b><span><b>醬蟹晚餐｜Sinjindo Ganjang Gejang（신진도간장게장）</b>：弘大入口站附近，醬油生醃蟹套餐；吃完繼續最後採買。</span></div><div class="time"><b>19:00</b><span>開始收尾、拿行李／整理戰利品</span></div><div class="time"><b>19:30–20:00</b><span>往仁川機場移動</span></div><div class="time"><b>23:00</b><span>仁川起飛 → 10/27 00:45 桃園</span></div>
+</div>
+<div class="mapbox"><iframe loading="lazy" src="https://www.google.com/maps?q=Hongdae%2C%20Seoul&output=embed"></iframe>
+<div class="mapcap"><b>DAY 4 地圖｜江南 → 弘大・延南洞 → 仁川</b>　醫美結束後只跑弘大／延南洞；醬蟹也安排在弘大，不額外跨區。</div>
+<div class="maplinks"><a target="_blank" href="https://www.google.com/maps/search/?api=1&query=Gangnam+ON+Clinic+Seoul">ON Clinic</a><a target="_blank" href="https://www.google.com/maps/search/?api=1&query=Sinjindo+Ganjang+Gejang+Seoul">醬蟹</a><a target="_blank" href="https://www.google.com/maps/search/?api=1&query=Hongdae+Seoul">弘大</a><a target="_blank" href="https://www.google.com/maps/search/?api=1&query=Yeonnam-dong+Seoul">延南洞</a></div></div>
+</div></section>
 
+<section id="visualshopping"><div class="wrap"><div class="eyebrow" style="color:var(--rust)">WHAT ARE WE SHOPPING?</div><h2>一眼看懂｜這間到底逛什麼</h2>
+<p class="lede">逛街點改成「照片＋品類＋一句話」卡片。看到卡片就知道是美妝、衣服、香氛、飾品還是角色周邊，不需要再讀一整排店名。</p>
+<div class="shopgrid">
+<div class="shopcard"><div class="shopphoto" style="background-image:url('https://image.ajunews.com/content/image/2026/04/24/20260424152627915035.jpg')"></div><div class="shopinfo"><h4>MUSINSA Megastore｜聖水</h4><div class="what">👗 韓國品牌集合・服飾・鞋包</div><div class="muted">主力服裝採買站；適合一次看多個韓國品牌。</div></div></div>
+<div class="shopcard"><div class="shopphoto" style="background-image:url('https://www.pelago.com/img/collections/hongdae-street/0718-0428_hongdae-street-seoul.jpg')"></div><div class="shopinfo"><h4>弘大・延南洞</h4><div class="what">👗 小眾女裝・選物・文創</div><div class="muted">LUUNE、LOC、LOOF、Loofon＋文創街，最後一天集中逛。</div></div></div>
+<div class="shopcard"><div class="shopphoto" style="background-image:url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/bd/20/32/nyu-nyu.jpg?w=900&h=-1&s=1')"></div><div class="shopinfo"><h4>Nyu Nyu｜明洞</h4><div class="what">💍 飾品・包包・髮飾</div><div class="muted">大量耳環、項鍊、戒指與配件；屬於會逛很久的店。</div></div></div>
+<div class="shopcard"><div class="shopphoto" style="background-image:url('https://i.pinimg.com/736x/12/f1/f0/12f1f08a898814d238c2f3a4db30b4fd.jpg')"></div><div class="shopinfo"><h4>Tamburins｜聖水</h4><div class="what">🌸 香水・護手霜・香氛</div><div class="muted">以氣味與包裝設計為主，偏精品感香氛。</div></div></div>
+<div class="shopcard"><div class="shopphoto" style="background-image:linear-gradient(135deg,#dfe5d8,#f6f1e8)"></div><div class="shopinfo"><h4>Olive Young｜明洞＋聖水</h4><div class="what">💄 保養・彩妝・面膜・髮品</div><div class="muted">明洞可補貨；聖水旗艦店則以完整逛店體驗為主。</div></div></div>
+<div class="shopcard"><div class="shopphoto" style="background-image:linear-gradient(135deg,#f1eadf,#cfc2ae)"></div><div class="shopinfo"><h4>Miffy Store｜聖水</h4><div class="what">🐰 Miffy 周邊・生活雜貨</div><div class="muted">角色商品、文具與小物；和一般服飾購物完全不同。</div></div></div>
+</div></div></section>
 <section id="shops"><div class="wrap"><div class="eyebrow" style="color:var(--rust)">SHOPPING DIRECTORY</div><h2>收藏店家｜依區域</h2>
 <div class="area card"><h3>📍 明洞 Myeongdong</h3><table><tr><th>店家</th><th>賣什麼</th></tr><tr><td>Ready Young</td><td>藥妝、美妝、保養品</td></tr><tr><td>Olive Young</td><td>藥妝、美妝、保養品</td></tr><tr><td>Holika Holika</td><td>韓國彩妝、保養</td></tr><tr><td>Nyu Nyu</td><td>飾品、包包、髮飾、配件</td></tr><tr><td>Mimiline</td><td>飾品、包包、生活小物</td></tr><tr><td>Juuneedu</td><td>睡衣、居家服</td></tr><tr><td>Snow Peak</td><td>戶外用品、服飾</td></tr><tr><td>Hetras</td><td>香氛、擴香、香水</td></tr><tr><td>白松韓牛</td><td>韓牛燒肉</td></tr></table></div>
 <div class="area card"><h3>📍 聖水 Seongsu</h3><table><tr><th>店家</th><th>賣什麼</th></tr><tr><td>Olive Young N Seongsu</td><td>大型美妝旗艦</td></tr><tr><td>MUSINSA Megastore</td><td>韓國潮流品牌集合</td></tr><tr><td>Tamburins / Hetras</td><td>香氛、香水、護手霜、擴香</td></tr><tr><td>SUARE / Marithé / Kodak Apparel / Loof</td><td>韓系服飾</td></tr><tr><td>Miffy Store Seoul</td><td>Miffy 周邊</td></tr><tr><td>Butty Sandwich House</td><td>三明治、早午餐</td></tr><tr><td>Neungdong Minari</td><td>韓式料理、芹菜烤肉</td></tr><tr><td>Mugukjip</td><td>蔘雞湯</td></tr></table></div>
